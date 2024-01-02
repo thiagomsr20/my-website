@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Menu -->
+    <div class="menu">
+        <div class="menu-logo">
+            Meu Portfolio
+        </div>
+        <ul class="menu-links">
+            <li class="menu-link active"><a href="#apresentacao">Apresentação</a></li>
+            <li class="menu-link"><a href="#projetos">Projetos</a></li>
+            <li class="menu-link"><a href="#contato">Contato</a></li>
+        </ul>
+    </div>
+    <!-- Seção de apresentação -->
+    <div class="apresentacao" id="apresentacao">
+        <div class="apresentacao-texto">
+            <h1>Olá, eu sou o Thiago Maciel Soares</h1>
+            <p>Eu sou um desenvolvedor web apaixonado por criar sites incríveis e responsivos. Eu tenho experiência em
+                JavaScript, React, Node.js, HTML, CSS, MongoDB e Firebase. Eu também gosto de aprender novas tecnologias
+                e ferramentas para melhorar as minhas habilidades.</p>
+            <p>Eu me formei na Universidade Federal do Rio Grande do Sul em 2020, e atualmente trabalho na Suno, uma
+                empresa que usa inteligência artificial para criar músicas personalizadas. Eu sou responsável por
+                desenvolver e manter o site da Suno, que permite aos usuários criar, ouvir e compartilhar as suas
+                músicas.</p>
+            <p>Eu moro em Caxias do Sul, uma cidade no estado do Rio Grande do Sul, Brasil. Caxias do Sul é conhecida
+                por ser um polo industrial e turístico, além de ter uma forte influência da cultura italiana. Eu gosto
+                de aproveitar o meu tempo livre para viajar, ler, assistir filmes e séries, e ouvir música.</p>
+        </div>
+        <div class="apresentacao-foto">
+            <img src="thiago.jpg" alt="Foto do Thiago">
+        </div>
+    </div>
+    <!-- Seção de projetos -->
+    <div class="projetos" id="projetos">
+        <h2>Alguns dos meus projetos</h2>
+        <div class="projeto">
+            <div class="projeto-imagem">
+                <img src="suno.png" alt="Logo da Suno">
+            </div>
+            <div class="projeto-texto">
+                <h3>Suno</h3>
+                <p>Um site que usa inteligência artificial para criar músicas personalizadas. Você pode escolher o
+                    gênero, o tema, o humor, o idioma e o nome da sua música, e a Suno vai gerar uma música única para
+                    você. Você também pode ouvir, baixar e compartilhar as suas músicas com os seus amigos.</p>
+                <a href="https://app.suno.ai">Visitar o site</a>
+            </div>
+        </div>
+        <div class="projeto">
+            <div class="projeto-imagem">
+                <img src="todo.png" alt="Logo do Todo">
+            </div>
+            <div class="projeto-texto">
+                <h3>Todo</h3>
+                <p>Um aplicativo web para gerenciar as suas tarefas diárias. Você pode adicionar, editar, marcar e
+                    excluir as suas tarefas, e também filtrá-las por status. O aplicativo usa o Firebase para armazenar
+                    e sincronizar os dados, e o React para criar a interface.</p>
+                <a href="https://todo-app-thiago.netlify.app">Visitar o site</a>
+            </div>
+        </div>
+        <div class="projeto">
+            <div class="projeto-imagem">
+                <img src="weather.png" alt="Logo do Weather">
+            </div>
+            <div class="projeto-texto">
+                <h3>Weather</h3>
+                <p>Um site que mostra a previsão do tempo para qualquer cidade do mundo. Você pode digitar o nome da
+                    cidade e ver a temperatura, a umidade, a pressão, o vento, o nascer e o pôr do sol, e o ícone do
+                    tempo. O site usa a API do OpenWeatherMap para obter os dados, e o Node.js para criar o servidor.
+                </p>
+                <a href="https://weather-app-thiago.herokuapp.com">Visitar o site</a>
+            </div>
+        </div>
+    </div>
+    <!-- Seção de contato -->
+    <div class="contato" id="contato">
+        <h2>Entre em contato comigo</h2>
+        <p>Se você quiser saber mais sobre mim, os meus projetos, ou me contratar para um trabalho, por favor, preencha
+            o formulário abaixo e eu responderei o mais rápido possível.</p>
+        <form class="contato-formulario" action="#" method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <!-- Rodapé -->
+    <div class="rodape">
+        <p class="rodape-texto">© 2024 Thiago Maciel Soares. Todos os direitos reservados.</p>
+    </div>
+</body>
+
+</html>
