@@ -6,14 +6,12 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Poppins, sans-serif;
     font-size: 16px;
     color: #333;
 }
 
-h1,
-h2,
-h3 {
+h1,h2,h3 {
     font-weight: bold;
 }
 
@@ -105,7 +103,7 @@ a:hover {
 
 .projeto {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;     
     align-items: center;
     justify-content: center;
     padding: 1rem;
@@ -137,7 +135,20 @@ a:hover {
 .contato-formulario {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 80%;
+}
+
+.contato-texto {
+    width: 80%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Centraliza texto quando passar de 1560 de largura na tela */
+@media screen and (min-width: 1560px) {
+    .contato-texto {
+        text-align: center;
+    }
 }
 
 .contato-formulario label {
@@ -151,6 +162,7 @@ a:hover {
     padding: 0.5rem;
     border: 1px solid #333;
     border-radius: 0.25rem;
+    resize: none;
 }
 
 .contato-formulario button {
