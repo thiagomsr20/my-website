@@ -28,3 +28,12 @@ projetos.forEach(function (projeto) {
 overlay.addEventListener('click', function () {
     this.style.display = 'none';
 });
+
+// Efeito de horizontal scrolling nos cartões de projetos
+var projetos = document.getElementById('projetos');
+
+projetos.addEventListener('mousemove', function (e) {
+    var percentage = e.clientX / window.innerWidth;
+    var difference = projetos.scrollWidth - projetos.offsetWidth;
+    projetos.scrollLeft = difference * percentage;
+});
