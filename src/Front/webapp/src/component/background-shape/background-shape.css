@@ -1,0 +1,22 @@
+/* Forma estilizada no background */
+#forma-estilizada-background {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 100vw 100 100vh 100vw;
+  border-color: transparent transparent #8bf0ff transparent;
+  transform: rotate(0deg);
+  position: absolute;
+  z-index: -5;
+  backdrop-filter: blur(50px);
+}
+
+@keyframes girar {
+  from {
+    border-width: 100vw 0 100vh 100vw;
+  }
+  to {
+    border-width: 80px 80px 0 0;
+  }
+}
+
