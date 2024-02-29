@@ -1,0 +1,35 @@
+.cabecario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 5em;
+    background-color: rgba(243, 243, 243, 0.816);
+    position: fixed;
+    z-index: 5;
+    color: rgb(82, 82, 82);
+}
+
+.cabecario-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 70vw;
+    height: 5em;
+    justify-content: space-between;
+}
+
+.cabecario-links {
+    display: flex;
+    list-style: none;
+}
+
+.cabecario-link {
+    margin-left: 1rem;
+    padding: 0.5rem;
+}
+
+.cabecario-logo-ponto {
+    color: rgb(255, 47, 47)
+}

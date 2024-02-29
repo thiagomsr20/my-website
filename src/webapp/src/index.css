@@ -6,11 +6,14 @@
   text-decoration: none;
 }
 
-.root, body {
-  width: 100vw;
+body {
   height: 100vh;
+}
+
+.root {
+  width: 100vw;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* Final da estilização padrão */

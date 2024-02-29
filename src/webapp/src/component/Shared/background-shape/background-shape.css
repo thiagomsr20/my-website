@@ -1,0 +1,10 @@
+/* Forma estilizada no background */
+.forma-estilizada-background {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 0 100vh 100vw;
+    border-color: transparent transparent  rgb(196, 196, 196) transparent;
+    position: absolute;
+    z-index: 1;
+  }
