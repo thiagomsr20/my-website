@@ -1,39 +1,71 @@
 .projeto-container {
-    width: 100vw;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(243, 243, 243);
-    color: rgb(82, 82, 82);
+  width: 100vw;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f3f3;
+  color: rgb(82, 82, 82);
 }
 
-.cartoes {
+/* ... existing styles for other classes ... */
+
+@media (min-width: 1000px) {
+  .cartoes {
     width: 100vw;
-    margin: 5em;
+    padding: 0 0 3rem 0;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cartoes {
+    width: 100vw;
+    padding: 0 0 3rem 0;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: space-between;
+  }
+}
+
+.card-container {
+  padding: 20px;
 }
 
 .projeto-card {
-    width: 200px;
-    height: 25em;
-    margin: 10px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 2px 10px rgb(188, 188, 188);
-    border-radius: 20px;
+  width: 300px;
+  height: 23rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 10px rgb(188, 188, 188);
+  border-radius: 20px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: 0.5s ease;
+}
+
+.projeto-card:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.5s ease;
+  box-shadow: 2px 2px 30px rgb(188, 188, 188);
 }
 
 .projeto-img {
-    width: 92%;
-    height: 80%;
-    border-radius: 10px;
+  width: 90%;
+  height: 70%;
+  border-radius: 10px;
+}
+.projeto-titulo {
+  margin: 1.5rem 0 0.5rem 0;
 }

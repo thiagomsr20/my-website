@@ -9,14 +9,7 @@ function Apresentacao() {
 
         <div class="apresentacao-resumo">
           <p>
-
-            Atualmente sou Desenvolvedor junior na SKA
-            Mas j'a trabalhei X
-
-            {/* Sou um entusiasta de desenvolvimento web, atualmente estudando por conta para me tornar um especialista no
-            desenvolvimento Back-End com ASP.NET. Apesar de estar correndo atrás de ser especialista, gosto muito
-            da ideia de entender como os demais setores funcionam,
-            por conta disso, adoro aprender novos conceitos que não fazem parte do meu roadmap Back-End, como DevOps, Front-End e UI UX. */}
+            Sou desenvolvedor BackEnd
           </p>
         </div>
 

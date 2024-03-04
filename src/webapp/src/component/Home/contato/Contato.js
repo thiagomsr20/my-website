@@ -3,8 +3,8 @@ import './Contato.css';
 function Contato() {
   return (
     <div class="contato-container">
-      <h1>Formulário de Contato</h1>
       <form action="/" method="post">
+      <h1 class="form h1">Formulário de Contato</h1>
       <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"></input>
         <label for="email">Email:</label>
