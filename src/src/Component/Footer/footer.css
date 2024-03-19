@@ -73,3 +73,14 @@ hr {
     color: #484848;
     padding: 0.5rem;
 }
+
+i {
+    color: rgb(255, 160, 36);
+    margin: 0 20px 0 0;
+}
+
+.lista-itens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

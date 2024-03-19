@@ -7,7 +7,7 @@ function Footer() {
                 <div className='container'>
                     <div className='footer-subcontainer'>
 
-                        <h1 className='footer-title'>Thiago's Portfolio</h1>
+                        <h1 className='footer-title'>Nice to see you here</h1>
                         <p className='footer-p1'>Thank you for visiting my personal portfolio website.<br></br>
                             Connect with me over socials.
                         </p>
@@ -16,13 +16,37 @@ function Footer() {
                     <div className='footer-subcontainer'>
 
                         <h1 className='footer-title'>Quick Links</h1>
+
                         <ul className='footer-content'>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Skills</li>
-                            <li>Education</li>
-                            <li>Work</li>
-                            <li>Experience</li>
+                            <div class="lista-itens">
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <li>Home</li>
+                            </div>
+
+                            <div class="lista-itens">
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <li>About</li>
+                            </div>
+
+                            <div class="lista-itens">
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <li>Project</li>
+                            </div>
+
+                            <div class="lista-itens">
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <li>Skills</li>
+                            </div>
+
+                            <div class="lista-itens">
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <li>Service</li>
+                            </div>
+
+                            <div class="lista-itens">
+                                <i class="fas fa-chevron-circle-right"></i>
+                                <li>Contact</li>
+                            </div>
                         </ul>
 
                     </div>
@@ -30,9 +54,20 @@ function Footer() {
 
                         <h1 className='footer-title'>Contact Info</h1>
                         <div className='footer-content'>
-                            <p>+55 54 99999-9999</p>
-                            <p>thiagoteste@gmail.com</p>
+                            <div class="lista-itens">
+                                <i class="fas fa-phone"></i>
+                                <p>+55 54 99999-9999</p>
+                            </div>
+
+                            <div class="lista-itens">
+                                <i class="fas fa-envelope"></i>
+                                <p>thiagoteste@gmail.com</p>
+                            </div>
+
+                            <div class="lista-itens">
+                                <i class="fas fa-map-marked-alt"></i>
                             <p>Brasil, RS</p>
+                            </div>
                         </div>
 
                     </div>
