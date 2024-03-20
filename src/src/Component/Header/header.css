@@ -6,14 +6,19 @@
 }
 
 .header {
-    background-color: #24252a;
+    background-color: #171717;
     box-shadow: 0px 3px 10px #464646;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 6rem;
+    padding: 1.5rem 0 1.5rem 0;
+    width: min(80%, 1500px);
 }
 
 .logo {
@@ -22,7 +27,11 @@
 }
 
 .logo h1 {
-    color: #fff;
+    color: #6e6e6e;
+}
+
+.logo span {
+    color: rgb(255, 160, 36);
 }
 
 .nav-list {
@@ -40,21 +49,26 @@
     margin: 0 15px;
 }
 
+.mobile-menu-icon i {
+    color: rgb(255, 160, 36);
+    font-size: 40px;
+}
+
 .nav-link {
     text-decoration: none;
     font-size: 1.15rem;
-    color: #fff;
+    color: #6e6e6e;
     font-weight: 400;
 }
 
-.login-button button {
+.resume-button button {
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     background-color: #0187a7;
 }
 
-.login-button button a {
+.resume-button button a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
@@ -76,7 +90,7 @@
     .nav-item {
         display: none;
     }
-    .login-button {
+    .resume-button {
         display: none;
     }
     .mobile-menu-icon {
@@ -97,11 +111,11 @@
         display: block;
         padding-top: 1.2rem;
     }
-    .mobile-menu .login-button {
+    .mobile-menu .resume-button {
         display: block;
         padding: 1rem 2rem;
     }
-    .mobile-menu .login-button button {
+    .mobile-menu .resume-button button {
         width: 100%;
     }
     .open {

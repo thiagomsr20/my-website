@@ -1,11 +1,20 @@
 import './header.css'
 
 function Header() {
+
+    function menuShow() {
+        let menuMobile = document.querySelector('.mobile-menu');
+        if (menuMobile.classList.contains('open')) {
+            menuMobile.classList.remove('open');
+        } else {
+            menuMobile.classList.add('open');
+        }
+    }
     return (
         <div className='header'>
             <nav class="nav-bar">
                 <div class="logo">
-                    <h1>Logo</h1>
+                    <h1 className='header-title'>Thiago<span>.</span></h1>
                 </div>
                 <div class="nav-list">
                     <ul>
@@ -14,12 +23,21 @@ function Header() {
                         <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
                     </ul>
                 </div>
-                <div class="login-button">
-                    <button><a href="#">Entrar</a></button>
+                <div class="resume-button">
+
+                    <button>
+                        <a href="#">Resume</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
                 </div>
 
                 <div class="mobile-menu-icon">
-                    <button onclick="menuShow()"><i class="fas fa-bars"></i></button>
+
+                    <button onClick={menuShow}>
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
                 </div>
             </nav>
             <div class="mobile-menu">
@@ -29,8 +47,11 @@ function Header() {
                     <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
                 </ul>
 
-                <div class="login-button">
-                    <button><a href="#">Entrar</a></button>
+                <div class="resume-button">
+                    <button>
+                        <a href="#">Resume</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
