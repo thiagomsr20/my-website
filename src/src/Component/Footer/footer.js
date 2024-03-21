@@ -1,6 +1,12 @@
 import './footer.css'
 
+// imagens
+import instagram from './resource/Instagram.png'
+import github from './resource/GitHub.png'
+import linkedin from './resource/LinkedIn.png'
+
 function Footer() {
+
     return (
         <div className='footer'>
             <div className='footer-container'>
@@ -12,11 +18,10 @@ function Footer() {
                             Connect with me over socials.
                         </p>
 
-                        <div className='footer-button'>
-                            <button>
-                                <a href="#">Resume</a>
-                                <i class="fa-solid fa-file"></i>
-                            </button>
+                        <div className='footer-socials'>
+                            <img src={instagram}></img>
+                            <img src={github}></img>
+                            <img src={linkedin}></img>
                         </div>
 
                     </div>

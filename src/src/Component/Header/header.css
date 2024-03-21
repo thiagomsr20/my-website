@@ -26,7 +26,7 @@
 }
 
 .header-scrolled {
-    --bg-color: #171717;
+    --bg-color: #171717e2;
     --vw: 100vw;
     --marg: 0;
 
@@ -35,6 +35,7 @@
     border-radius: 40px;
     width: min(80%, 1500px);
     top: var(--marg);
+    top: 1.5rem;
     z-index: 5;
 
     position: fixed;
@@ -59,7 +60,7 @@
 }
 
 .logo h1 {
-    color: #6e6e6e;
+    color: rgb(160, 160, 160);
 }
 
 .logo span {
@@ -89,7 +90,7 @@
 .nav-link {
     text-decoration: none;
     font-size: 1.15rem;
-    color: #6e6e6e;
+    color: rgb(160, 160, 160);
     font-weight: 400;
 }
 
@@ -123,7 +124,30 @@
     display: none;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 850px) {
+
+    .header-scrolled {
+        --bg-color: #171717;
+        --vw: 100vw;
+        --marg: 0;
+    
+        background-color: var(--bg-color);
+        box-shadow: 0px 3px 10px #464646;
+        border-radius: 40px;
+        width: min(80%, 1500px);
+        top: var(--marg);
+        top: 1.5rem;
+        z-index: 5;
+    
+        position: fixed;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    
+        transition: all 0.4s;
+    }
+
     .nav-bar {
         padding: 1.5rem 4rem;
     }
