@@ -6,12 +6,44 @@
 }
 
 .header {
-    background-color: #171717;
+    --bg-color: #171717;
+    --vw: 100vw;
+    --marg: 0;
+
+    background-color: var(--bg-color);
     box-shadow: 0px 3px 10px #464646;
+    width: var(--vw);
+    top: var(--marg);
+    z-index: 5;
+
+    position: fixed;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+    transition: all 0.4s;
+}
+
+.header-scrolled {
+    --bg-color: #171717;
+    --vw: 100vw;
+    --marg: 0;
+
+    background-color: var(--bg-color);
+    box-shadow: 0px 3px 10px #464646;
+    border-radius: 40px;
+    width: min(80%, 1500px);
+    top: var(--marg);
+    z-index: 5;
+
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: all 0.4s;
 }
 
 .nav-bar {
@@ -66,6 +98,14 @@
     padding: 10px 15px;
     border-radius: 5px;
     background-color: #0187a7;
+
+    align-items: center;
+}
+
+.resume-button i {
+    color: rgb(255, 160, 36);
+    font-size: 1.1rem;
+    margin: 0 0 0 10px;
 }
 
 .resume-button button a {

@@ -12,6 +12,13 @@ function Footer() {
                             Connect with me over socials.
                         </p>
 
+                        <div className='footer-button'>
+                            <button>
+                                <a href="#">Resume</a>
+                                <i class="fa-solid fa-file"></i>
+                            </button>
+                        </div>
+
                     </div>
                     <div className='footer-subcontainer'>
 
@@ -66,7 +73,7 @@ function Footer() {
 
                             <div class="lista-itens">
                                 <i class="fas fa-map-marked-alt"></i>
-                            <p>Brasil, RS</p>
+                                <p>Brasil, RS</p>
                             </div>
                         </div>
 
