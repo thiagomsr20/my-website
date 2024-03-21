@@ -18,7 +18,7 @@ function Header() {
     // pq o react n renderiza a tempo para permitir o uso
     const [className, changeClassName] = useState(false);
     const changeHeader = () => {
-        if(window.scrollY >= 100){
+        if(window.scrollY >= 120){
             changeClassName(true)
         }else{
             changeClassName(false)

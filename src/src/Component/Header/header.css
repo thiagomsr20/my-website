@@ -134,7 +134,7 @@
         background-color: var(--bg-color);
         box-shadow: 0px 3px 10px #464646;
         border-radius: 40px;
-        width: min(80%, 1500px);
+        width: min(90%, 1500px);
         top: var(--marg);
         top: 1.5rem;
         z-index: 5;
