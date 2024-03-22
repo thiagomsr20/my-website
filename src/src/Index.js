@@ -4,7 +4,7 @@ import './index.css';
 
 // Header e footer fixos na pagina
 import Header from './Component/Header/header'
-import Design_bgShape from './Component//Design/bg shape/bgShape'
+// import Design_bgShape from './Component//Design/bg shape/bgShape'
 import Footer from './Component/Footer/footer'
 
 // Paginas variaveis
@@ -15,7 +15,6 @@ root.render(
   <React.StrictMode>
     <Header />
     <Introduction />
-    <Design_bgShape totalPageHeight={1000}/>
     <Footer />
   </React.StrictMode>
 );
