@@ -13,17 +13,17 @@
 .Introduction h1 {
     color: #0187a7;
     font-weight: bold;
-    font-size: 90px;
-    font-family:'Courier New', Courier, monospace
+    font-size: 5vw;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .Introduction div {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
 }
 
 .Introduction i {
-    font-size: 80px;
+    font-size: 5vw;
     color: rgb(255, 160, 36);
 }
