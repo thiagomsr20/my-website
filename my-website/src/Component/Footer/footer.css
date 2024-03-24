@@ -49,9 +49,8 @@
     color: rgb(255, 160, 36);
 }
 .footer-p1 {
-    text-align: justify;
-    text-justify: inter-word;
     margin: 15px 0 0 0;
+    font-size: 22px;
 }
 
 .footer-content {
@@ -59,9 +58,6 @@
 }
 
 .footer-content p, li {
-    font-size: 22px;
-}
-.footer-p1 {
     font-size: 22px;
 }
 

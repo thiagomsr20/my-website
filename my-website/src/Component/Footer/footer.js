@@ -5,7 +5,7 @@ import instagram from './resource/Instagram.png'
 import github from './resource/GitHub.png'
 import linkedin from './resource/LinkedIn.png'
 
-function Footer() {
+export default function Footer() {
 
     return (
         <div className='footer'>
@@ -14,8 +14,7 @@ function Footer() {
                     <div className='footer-subcontainer'>
 
                         <h1 className='footer-title'>Nice to see you here</h1>
-                        <p className='footer-p1'>Thank you for visiting my personal portfolio website.<br></br>
-                            Connect with me over socials.
+                        <p className='footer-p1'>Thank you for visiting my personal portfolio website.<br></br>Connect with me over socials.
                         </p>
 
                         <div className='footer-socials'>
@@ -94,5 +93,3 @@ function Footer() {
         </div>
     );
 }
-
-export default Footer
