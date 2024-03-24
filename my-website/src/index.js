@@ -8,13 +8,13 @@ import Header from './Component/Header/header'
 import Footer from './Component/Footer/footer'
 
 // Paginas variaveis
-import Introduction from './Component/Home/Introduction/introduction'
+import Introdution from './Component/Home/Introduction/introduction'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
-    <Introduction />
+    <Introdution />
     <Footer />
   </React.StrictMode>
 );

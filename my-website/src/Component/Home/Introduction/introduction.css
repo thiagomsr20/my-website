@@ -1,10 +1,8 @@
 .Introduction {
-    margin-top: 500px;
-    width: 100vw;
-    height: 500px;
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
     font-size: 50px;
-    background-color: #fff;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,5 +29,5 @@
 
 #corgiGif {
     width: 80%;
-
+    height: 50%;
 }

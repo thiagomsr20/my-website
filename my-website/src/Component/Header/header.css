@@ -1,13 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-}
-
 .header {
     --bg-color: #171717;
-    --vw: 100vw;
+    --vw: 100%;
     --marg: 0;
 
     background-color: var(--bg-color);
@@ -26,7 +19,7 @@
 
 .header-scrolled {
     --bg-color: #171717;
-    --vw: 100vw;
+    --vw: 60vw;
 
     background-color: var(--bg-color);
     box-shadow: 0px 3px 10px #464646;
