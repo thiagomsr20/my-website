@@ -1,6 +1,7 @@
 .Introduction {
+    margin-top: 500px;
     width: 100vw;
-    height: 1500px;
+    height: 500px;
     font-size: 50px;
     background-color: #fff;
 
@@ -29,5 +30,6 @@
 }
 
 #corgiGif {
-    width: 100%;
+    width: 80%;
+
 }

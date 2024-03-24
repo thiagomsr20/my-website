@@ -11,8 +11,6 @@ body, .root {
     align-items: center;
 }
 
-.AVISO-INICIAL {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(216, 216, 216);
+.Footer {
+    bottom: 0;
 }
