@@ -20,7 +20,8 @@ function Header() {
     const changeHeader = () => {
         if(window.scrollY > 0){
             changeClassName(true)
-        }else{
+        }
+        else{
             changeClassName(false)
         }
     }
@@ -29,6 +30,8 @@ function Header() {
 
     return (  
         <div className={className ? 'header-scrolled' : 'header'}>
+
+
             <nav class="nav-bar">
                 <div class="logo">
                     <h1 className='header-title'>Thiago<span>.</span></h1>
@@ -60,6 +63,8 @@ function Header() {
 
                 </div>
             </nav>
+
+
             <div class="mobile-menu">
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
@@ -77,6 +82,8 @@ function Header() {
                     </button>
                 </div>
             </div>
+
+            
         </div>
     );
 }

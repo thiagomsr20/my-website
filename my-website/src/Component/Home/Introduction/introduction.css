@@ -1,6 +1,7 @@
 .Introduction {
     width: 100%;
-    height: 100%;
+    height: 2000px;
+    top: 200px;
     font-size: 50px;
     display: flex;
     flex-direction: column;

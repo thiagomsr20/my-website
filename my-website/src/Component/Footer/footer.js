@@ -18,9 +18,9 @@ export default function Footer() {
                         </p>
 
                         <div className='footer-socials'>
-                            <img src={instagram}></img>
-                            <img src={github}></img>
-                            <img src={linkedin}></img>
+                            <a href='https://www.instagram.com/thg_rmss/' target='_blank'><img src={instagram}></img></a>
+                            <a href='https://github.com/thiagomsr20' target='_blank'><img src={github}></img></a>
+                            <a href='https://www.linkedin.com/in/thiago-maciel-soares-738913235/' target='_blank'><img src={linkedin}></img></a>
                         </div>
 
                     </div>
@@ -29,32 +29,32 @@ export default function Footer() {
                         <h1 className='footer-title'>Quick Links</h1>
 
                         <ul className='footer-content'>
-                            <div class="lista-itens">
+                            <div class="lista-itens-ql">
                                 <i class="fas fa-chevron-circle-right"></i>
                                 <li>Home</li>
                             </div>
 
-                            <div class="lista-itens">
+                            <div class="lista-itens-ql">
                                 <i class="fas fa-chevron-circle-right"></i>
                                 <li>About</li>
                             </div>
 
-                            <div class="lista-itens">
+                            <div class="lista-itens-ql">
                                 <i class="fas fa-chevron-circle-right"></i>
                                 <li>Project</li>
                             </div>
 
-                            <div class="lista-itens">
+                            <div class="lista-itens-ql">
                                 <i class="fas fa-chevron-circle-right"></i>
                                 <li>Skills</li>
                             </div>
 
-                            <div class="lista-itens">
+                            <div class="lista-itens-ql">
                                 <i class="fas fa-chevron-circle-right"></i>
                                 <li>Service</li>
                             </div>
 
-                            <div class="lista-itens">
+                            <div class="lista-itens-ql">
                                 <i class="fas fa-chevron-circle-right"></i>
                                 <li>Contact</li>
                             </div>
@@ -67,12 +67,12 @@ export default function Footer() {
                         <div className='footer-content'>
                             <div class="lista-itens">
                                 <i class="fas fa-phone"></i>
-                                <p>+55 54 99999-9999</p>
+                                <p>+55 54 98169-6767</p>
                             </div>
 
                             <div class="lista-itens">
                                 <i class="fas fa-envelope"></i>
-                                <p>thiagoteste@gmail.com</p>
+                                <p>thiagomsoares2017@gmail.com</p>
                             </div>
 
                             <div class="lista-itens">
