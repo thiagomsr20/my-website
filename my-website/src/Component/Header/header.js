@@ -26,8 +26,14 @@ function Header() {
     const [isScrolled, changeClassName] = useState(false);
     const changeHeader = () => {
         if (window.scrollY > 0) {
-            changeClassName(true)
-        } else {
+            // Provávelmente com a inserção de novos campos esse valor vai ter que ser aumentado
+            // de 1900 para mais no caso
+            if(window.scrollY >= 1900){
+                changeClassName(false)
+            }else{
+                changeClassName(true)
+            }
+        }else {
             changeClassName(false)
         }
     }
