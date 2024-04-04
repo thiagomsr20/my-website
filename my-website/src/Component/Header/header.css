@@ -5,8 +5,16 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    transition: 0.4s;
     position: absolute;
+    background-color:#171717;
+    box-shadow: 0 3px 10px rgb(20, 20, 20);
+}
+
+.header, .header-scrolled h1 {
+    color: #fff;
+}
+.header, .header-scrolled a {
+    color: #a0a0a0;;
 }
 
 .header-scrolled {
@@ -14,12 +22,13 @@
     top: 10px;
     position: fixed;
     border-radius: 2.5rem;
-    transition: 0.4s;
     width: min(95%, 1500px);
 
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #171717;
+    box-shadow: 0 3px 10px rgb(20, 20, 20);
 }
 
 .header-container {
@@ -44,7 +53,7 @@
 }
 
 .menu ul {
-    width: 65%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -68,7 +77,6 @@
 /* Responsividade no texto do footer e nas imagens do footer */
 .menu a {
     text-decoration: none;
-
     font-size: 22px;
 }
 
@@ -118,7 +126,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 950px) {
     .menu ul {
         display: none;
     }

@@ -3,22 +3,6 @@ import React, { useState } from 'react'
 import { useGlobalState } from '../../GlobalState'; // Importando o hook useGlobalState
 import ChangeTheme from '../Sub Component/change theme/changeTheme'
 
-const DarkStyle = {
-    backgroundColor: "#171717",
-    boxShadow: '0px 3px 10px #0e0e0e'
-};
-const LightStyle = {
-    backgroundColor: "#fff",
-    boxShadow: '0px 3px 20px #a5a5a5'
-};
-const textDarkStyle = {
-    color: '#a0a0a0'
-}
-const textLightStyle = {
-    color: '#272727'
-}
-const titleDark = { color: '#fff' }, titleLight = { color: '#000' }
-
 function Header() {
 
     const { darkMode } = useGlobalState(); // Usando o hook useGlobalState para acessar o valor de darkMode
@@ -48,21 +32,21 @@ function Header() {
     }
 
     return (
-        <div className={isScrolled ? 'header-scrolled' : 'header'} style={darkMode ? DarkStyle : LightStyle}>
+        <div className={isScrolled ? 'header-scrolled' : 'header'}>
 
             <div className='header-container'>
 
                 <div className='subcontainer'>
-                    <h1 style={darkMode ? titleDark : titleLight}>Thiago<span>.</span></h1>
+                    <h1>Thiago<span>.</span></h1>
 
                     <div className='menu'>
                         <ul>
-                            <li><a style={darkMode ? textDarkStyle : textLightStyle}>Home</a></li>
-                            <li><a style={darkMode ? textDarkStyle : textLightStyle}>About</a></li>
-                            <li><a style={darkMode ? textDarkStyle : textLightStyle}>Project</a></li>
-                            <li><a style={darkMode ? textDarkStyle : textLightStyle}>Skills</a></li>
-                            <li><a style={darkMode ? textDarkStyle : textLightStyle}>Service</a></li>
-                            <li><a style={darkMode ? textDarkStyle : textLightStyle}>Contact</a></li>
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Project</a></li>
+                            <li><a>Skills</a></li>
+                            <li><a>Service</a></li>
+                            <li><a>Contact</a></li>
                         </ul>
 
                         <div className='mobile-menu-icon'>
@@ -79,32 +63,32 @@ function Header() {
                     <ul>
                         <li>
                             <i class="fas fa-chevron-circle-right"></i>
-                            <a style={darkMode ? textDarkStyle : textLightStyle}>Home</a>
+                            <a>Home</a>
                         </li>
 
                         <li>
                             <i class="fas fa-chevron-circle-right"></i>
-                            <a style={darkMode ? textDarkStyle : textLightStyle}>About</a>
+                            <a>About</a>
                         </li>
 
                         <li>
                             <i class="fas fa-chevron-circle-right"></i>
-                            <a style={darkMode ? textDarkStyle : textLightStyle}>Project</a>
+                            <a>Project</a>
                         </li>
 
                         <li>
                             <i class="fas fa-chevron-circle-right"></i>
-                            <a style={darkMode ? textDarkStyle : textLightStyle}>Skills</a>
+                            <a>Skills</a>
                         </li>
 
                         <li>
                             <i class="fas fa-chevron-circle-right"></i>
-                            <a style={darkMode ? textDarkStyle : textLightStyle}>Service</a>
+                            <a>Service</a>
                         </li>
 
                         <li>
                             <i class="fas fa-chevron-circle-right"></i>
-                            <a style={darkMode ? textDarkStyle : textLightStyle}>Contact</a>
+                            <a>Contact</a>
                         </li>
                     </ul>
                 </div>

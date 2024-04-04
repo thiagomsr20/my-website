@@ -1,33 +1,85 @@
 .Introduction {
-    width: 100%;
-    height: 2000px;
-    top: 200px;
+    width: min(95%, 1500px);
+    height: min(70rem, 150vw);
     font-size: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    z-index: -10;
 }
 
-.Introduction h1 {
-    color: #0187a7;
-    font-size: 100%;
-    font-weight: bold;
-    font-family:'Courier New', Courier, monospace
-}
 
-.Introduction div {
+/* Seção com a foto de perfil */
+.foto {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    z-index: 10;
+}
+
+.foto span {
+    height: 610px;
+    width: 1220px;
+    border-radius: 671px 671px 0 0;
+    position: absolute;
+    background: linear-gradient( #ffa024, #ac6100);
+    z-index: -5;
+} 
+
+@media screen and (max-width: 1300px) {
+    .foto span {
+        height: calc(20vw * 2.5);
+        width: calc(40vw * 2.5);
+    } 
+}
+
+.Introduction img {
+    width: min(50rem, 100%);
+    height: min(100vw, 50rem);
+}
+/* ____________________________ */
+
+.apresentacao {
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    top: 110px;
 }
 
-.Introduction i {
-    font-size: 100%;
-    color: rgb(255, 160, 36);
+.apresentacao span{
+    color: #ffa024
 }
 
-#corgiGif {
-    width: 80%;
-    height: 60%;
+/* Responsividade no texto do footer e nas imagens do footer */
+
+.apresentacao h1 {
+    font-size: 6rem;
+    text-align: center;
 }
+
+.apresentacao p{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid rgb(124, 124, 124);
+    color: rgb(77, 77, 77);
+    border-radius: 20px;
+    padding: 2px 10px 2px 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .apresentacao h1 {
+        font-size: 8vw;
+    }
+
+    .apresentacao p{
+        font-size: 2vw
+    }
+}
+
+/* --------------------------------------------------------------- */
