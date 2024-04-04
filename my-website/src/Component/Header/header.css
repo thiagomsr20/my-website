@@ -15,7 +15,7 @@
     position: fixed;
     border-radius: 2.5rem;
     transition: 0.4s;
-    width: min(80%, 1500px);
+    width: min(95%, 1500px);
 
     display: flex;
     align-items: center;
@@ -24,7 +24,7 @@
 
 .header-container {
     padding: 0.5rem 0 0.5rem 0;
-    width: min(85%, 1500px);
+    width: min(90%, 1500px);
     display: flex;
     align-items: center;
     justify-content: space-between;
