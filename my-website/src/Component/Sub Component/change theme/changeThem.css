@@ -10,6 +10,8 @@
   position: relative;
   width: var(--width-of-switch);
   height: var(--height-of-switch);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Hide default HTML checkbox */
@@ -17,6 +19,8 @@
   opacity: 0;
   width: 0;
   height: 0;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* The slider */
