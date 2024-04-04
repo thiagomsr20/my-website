@@ -60,15 +60,15 @@
 
 @keyframes fadeUp {
     0% {
-        bottom: 0;
+      transform: translateY(100%);
     }
     100% {
-        bottom: 710px
+      transform: translateY(0);
     }
-}
+  }
 
 .apresentacao {
-    z-index: 20;
+    z-index: -5;
     position: absolute;
     display: flex;
     flex-direction: column;
