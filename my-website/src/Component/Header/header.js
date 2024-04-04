@@ -12,7 +12,7 @@ const LightStyle = {
     boxShadow: '0px 3px 20px #a5a5a5'
 };
 const textDarkStyle = {
-    color: '#797979'
+    color: '#a0a0a0'
 }
 const textLightStyle = {
     color: '#272727'

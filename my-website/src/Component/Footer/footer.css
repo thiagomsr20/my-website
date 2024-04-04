@@ -33,7 +33,7 @@
     display: flex;
     margin: 15px;
     flex-direction: column;
-    color: rgb(160, 160, 160);
+    color: #a0a0a0;
     align-items: flex-start;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .footer-title {
-    color: rgb(255, 160, 36);
+    color: #ffa024;
 }
 .footer-p1 {
     margin: 15px 0 0 0;
@@ -78,7 +78,7 @@
 }
 
 .lista-itens-ql i, .lista-itens i {
-    color: rgb(255, 160, 36);
+    color: #ffa024;
     margin: 0 10px 0 0;
     font-size: 25px;
 }
@@ -98,7 +98,7 @@
     }
 
     .lista-itens-ql i, .lista-itens i {
-        color: rgb(255, 160, 36);
+        color: #ffa024;
         margin: 0 10px 0 0;
         font-size: 3.5vw;
     }
@@ -115,7 +115,7 @@ hr {
 }
 
 .copyright {
-    color: rgb(103, 103, 103);
+    color: #797979;
     padding: 0.5rem;
 }
 
