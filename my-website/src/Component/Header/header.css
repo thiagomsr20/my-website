@@ -1,157 +1,155 @@
 .header {
-    --bg-color: #171717;
-    --vw: 100%;
-    --marg: 0;
-
-    background-color: var(--bg-color);
-    box-shadow: 0px 3px 10px #464646;
-    width: var(--vw);
-    top: var(--marg);
-    z-index: 5;
-
-    position: fixed;
+    transition: 40ms;
+    z-index: 10;
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
-    transition: all 0.4s;
+    width: 100%;
+    transition: 0.4s;
 }
 
 .header-scrolled {
-    --bg-color: #171717;
-    --vw: 60vw;
-
-    background-color: var(--bg-color);
-    box-shadow: 0px 3px 10px #464646;
-    border-radius: 40px;
-    width: min(95%, 1500px);
-    top: 1.5rem;
-    z-index: 5;
-
+    z-index: 10;
+    top: 10px;
     position: fixed;
+    border-radius: 2.5rem;
+    transition: 0.4s;
+    width: min(80%, 1500px);
+
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
-    transition: all 0.4s;
 }
 
+.header-container {
+    padding: 0.5rem 0 0.5rem 0;
+    width: min(85%, 1500px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.menu, .subcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
 
+.header-container span {
+    color: #ffa024;
+}
 
-.nav-bar {
+.menu ul {
+    width: 65%;
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 0 1.5rem 0;
-    width: min(80%, 1500px);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo h1 {
-    color: rgb(160, 160, 160);
-}
-
-.logo span {
-    color: rgb(255, 160, 36);
-}
-
-.nav-list {
-    display: flex;
-    align-items: center;
-}
-
-.nav-list ul {
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
     list-style: none;
-}
-
-.nav-item {
-    margin: 0 15px;
-}
-
-.mobile-menu-icon i {
-    color: rgb(255, 160, 36);
-    font-size: 40px;
-}
-
-.nav-link {
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: rgb(160, 160, 160);
-    font-weight: 400;
-}
-
-.resume-button button {
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #0187a7;
-
     align-items: center;
 }
 
-.resume-button i {
-    color: rgb(255, 160, 36);
-    font-size: 1.1rem;
-    margin: 0 0 0 10px;
-}
 
-.resume-button button a {
+.menu a {
     text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.mobile-menu-icon {
-    display: none;
+.menu a:hover {
+    text-decoration: underline 3px #ffa024;
+    cursor: pointer;
 }
 
+/* Responsividade no texto do footer e nas imagens do footer */
+.menu a {
+    text-decoration: none;
+
+    font-size: 22px;
+}
+
+@media screen and (max-width: 750px) {
+    .menu a {
+        text-decoration: none;
+        font-size: min(1.2vw, 20px);
+    }
+}
+
+/* --------------------------------------------------------------- */
+
+
+/* Menu hamburguer */
 .mobile-menu {
     display: none;
 }
 
-@media screen and (max-width: 950px) {
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
-    .nav-item {
+.mobile-menu-icon button {
+    display: none;
+}
+
+.mobile-menu-icon i {
+    color: #ffa024;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1500px) {
+    .menu ul {
         display: none;
     }
-    .resume-button {
-        display: none;
-    }
-    .mobile-menu-icon {
-        display: block;
-    }
+
     .mobile-menu-icon button {
-        background-color: transparent;
+        display: block;
         border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
     }
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-    .mobile-menu .resume-button {
-        display: block;
-        padding: 1rem 2rem;
-    }
-    .mobile-menu .resume-button button {
+
+    .mobile-menu {
         width: 100%;
     }
+
+    .mobile-menu ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu li {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-menu i {
+        color: rgb(255, 160, 36);
+        margin: 0 10px 0 0;
+    }
+    
+    .mobile-menu i {
+        color: rgb(255, 160, 36);
+        margin: 0 10px 0 0;
+    }
+
+    .mobile-menu a:hover {
+        text-decoration: underline 3px #ffa024;
+        cursor: pointer;
+    }
+
+    .header-container {
+        flex-direction: column;   
+    }
+
     .open {
         display: block;
     }
 }
+
+/* --------------------------------------------------------------- */

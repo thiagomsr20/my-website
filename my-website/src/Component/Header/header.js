@@ -1,9 +1,38 @@
 import './header.css'
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import { useGlobalState } from '../../GlobalState'; // Importando o hook useGlobalState
+import ChangeTheme from '../Sub Component/change theme/changeTheme'
+
+const DarkStyle = {
+    backgroundColor: "#171717",
+    boxShadow: '0px 3px 10px #0e0e0e'
+};
+const LightStyle = {
+    backgroundColor: "#fff",
+    boxShadow: '0px 3px 20px #a5a5a5'
+};
+const textDarkStyle = {
+    color: '#797979'
+}
+const textLightStyle = {
+    color: '#272727'
+}
+const titleDark = { color: '#fff' }, titleLight = { color: '#000' }
 
 function Header() {
 
-    // hamburguer menu script
+    const { darkMode } = useGlobalState(); // Usando o hook useGlobalState para acessar o valor de darkMode
+
+    const [isScrolled, changeClassName] = useState(false);
+    const changeHeader = () => {
+        if (window.scrollY > 0) {
+            changeClassName(true)
+        } else {
+            changeClassName(false)
+        }
+    }
+    window.addEventListener("scroll", changeHeader)
+
     function menuShow() {
         let menuMobile = document.querySelector('.mobile-menu');
         if (menuMobile.classList.contains('open')) {
@@ -13,77 +42,69 @@ function Header() {
         }
     }
 
-    // Efeito de mudar o header quando scrolar
-    // Nao 'e possivel usar classlist idreto pois n tem como usar o BOM,
-    // pq o react n renderiza a tempo para permitir o uso
-    const [className, changeClassName] = useState(false);
-    const changeHeader = () => {
-        if(window.scrollY > 0){
-            changeClassName(true)
-        }
-        else{
-            changeClassName(false)
-        }
-    }
+    return (
+        <div className={isScrolled ? 'header-scrolled' : 'header'} style={darkMode ? DarkStyle : LightStyle}>
 
-    window.addEventListener("scroll", changeHeader)
+            <div className='header-container'>
 
-    return (  
-        <div className={className ? 'header-scrolled' : 'header'}>
+                <div className='subcontainer'>
+                    <h1 style={darkMode ? titleDark : titleLight}>Thiago<span>.</span></h1>
 
+                    <div className='menu'>
+                        <ul>
+                            <li><a style={darkMode ? textDarkStyle : textLightStyle}>Home</a></li>
+                            <li><a style={darkMode ? textDarkStyle : textLightStyle}>About</a></li>
+                            <li><a style={darkMode ? textDarkStyle : textLightStyle}>Project</a></li>
+                            <li><a style={darkMode ? textDarkStyle : textLightStyle}>Skills</a></li>
+                            <li><a style={darkMode ? textDarkStyle : textLightStyle}>Service</a></li>
+                            <li><a style={darkMode ? textDarkStyle : textLightStyle}>Contact</a></li>
+                        </ul>
 
-            <nav class="nav-bar">
-                <div class="logo">
-                    <h1 className='header-title'>Thiago<span>.</span></h1>
+                        <div className='mobile-menu-icon'>
+                            <button onClick={menuShow}>
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <ChangeTheme />
                 </div>
-                <div class="nav-list">
+
+                <div className='mobile-menu'>
                     <ul>
-                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Project</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Service</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        <li>
+                            <i class="fas fa-chevron-circle-right"></i>
+                            <a style={darkMode ? textDarkStyle : textLightStyle}>Home</a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-chevron-circle-right"></i>
+                            <a style={darkMode ? textDarkStyle : textLightStyle}>About</a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-chevron-circle-right"></i>
+                            <a style={darkMode ? textDarkStyle : textLightStyle}>Project</a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-chevron-circle-right"></i>
+                            <a style={darkMode ? textDarkStyle : textLightStyle}>Skills</a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-chevron-circle-right"></i>
+                            <a style={darkMode ? textDarkStyle : textLightStyle}>Service</a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-chevron-circle-right"></i>
+                            <a style={darkMode ? textDarkStyle : textLightStyle}>Contact</a>
+                        </li>
                     </ul>
-                </div>
-                <div class="resume-button">
-
-                    <button>
-                        <a href="#">Resume</a>
-                        <i class="fa-solid fa-file"></i>
-                    </button>
-
-                </div>
-
-                <div class="mobile-menu-icon">
-
-                    <button onClick={menuShow}>
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-
-                </div>
-            </nav>
-
-
-            <div class="mobile-menu">
-                <ul>
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Project</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Service</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                </ul>
-
-                <div class="resume-button">
-                    <button>
-                        <a href="#">Resume</a>
-                        <i class="fa-solid fa-file"></i>
-                    </button>
                 </div>
             </div>
 
-            
         </div>
     );
 }

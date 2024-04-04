@@ -1,6 +1,9 @@
 import './introduction.css'
+import { useGlobalState } from '../../../GlobalState'; // Importando o hook useGlobalState
 
 export default function Introduction() {
+    const { darkMode } = useGlobalState(); // Usando o hook useGlobalState para acessar o valor de darkMode
+
     return (
         <div className='Introduction'>
             <div>
