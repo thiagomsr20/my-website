@@ -6,7 +6,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-body, .root {
+body, .root, .root-container {
     width: 100%;
     height: 100%;
     display: flex;

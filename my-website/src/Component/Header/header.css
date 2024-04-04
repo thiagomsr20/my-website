@@ -8,6 +8,7 @@
     position: absolute;
     background-color:#171717;
     box-shadow: 0 3px 10px rgb(20, 20, 20);
+    transition: 0.4s;
 }
 
 .header, .header-scrolled h1 {
@@ -23,7 +24,7 @@
     position: fixed;
     border-radius: 2.5rem;
     width: min(95%, 1500px);
-
+    transition: 0.4s;
     display: flex;
     align-items: center;
     justify-content: center;
