@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    width: min(80%, 1500px);
+    width: min(95%, 1500px);
 }
 
 .container {
@@ -87,11 +87,11 @@
 
 @media screen and (max-width: 750px) {
     .footer h1 {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     .footer a, li, p {
-        font-size: 3.5vw;
+        font-size: 4.5vw
     }
 
     .footer-socials img {
