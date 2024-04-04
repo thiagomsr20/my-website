@@ -67,12 +67,20 @@
 .footer-socials img {
     width: 50px;
     height: 65px;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .footer-socials a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.lista-itens-ql i, .lista-itens i {
+    color: rgb(255, 160, 36);
+    margin: 0 10px 0 0;
+    font-size: 25px;
 }
 
 @media screen and (max-width: 750px) {
@@ -87,6 +95,12 @@
     .footer-socials img {
         width: 8vw;
         height: 10vw;
+    }
+
+    .lista-itens-ql i, .lista-itens i {
+        color: rgb(255, 160, 36);
+        margin: 0 10px 0 0;
+        font-size: 3.5vw;
     }
 }
 /* --------------------------------------------------------------- */
@@ -105,15 +119,6 @@ hr {
     padding: 0.5rem;
 }
 
-.lista-itens-ql i {
-    color: rgb(255, 160, 36);
-    margin: 0 10px 0 0;
-}
-
-.lista-itens i {
-    color: rgb(255, 160, 36);
-    margin: 0 10px 0 0;
-}
 
 .lista-itens {
     display: flex;

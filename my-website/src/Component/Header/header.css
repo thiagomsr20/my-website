@@ -72,6 +72,11 @@
     font-size: 22px;
 }
 
+.mobile-menu-icon i {
+    color: #ffa024;
+    font-size: 30px;
+}
+
 @media screen and (max-width: 750px) {
     .menu a {
         text-decoration: none;
@@ -85,6 +90,15 @@
     .header-scrolled h1 {
         font-size: 5vw;
     }
+
+    .mobile-menu-icon i {
+        color: #ffa024;
+        font-size: 6vw;
+    }
+
+    .header-scrolled {
+        border-radius: 6vw;
+    }
 }
 
 /* --------------------------------------------------------------- */
@@ -97,11 +111,6 @@
 
 .mobile-menu-icon button {
     display: none;
-}
-
-.mobile-menu-icon i {
-    color: #ffa024;
-    font-size: 30px;
 }
 
 @media screen and (max-width: 1500px) {
