@@ -57,11 +57,11 @@
 
 /* Responsividade no texto do footer e nas imagens do footer */
 .footer h1 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .footer a, li, p {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .footer-socials img {
@@ -85,13 +85,13 @@
     font-size: 25px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 450px) {
     .footer h1 {
-        font-size: 6vw;
+        font-size: 7vw;
     }
 
     .footer a, li, p {
-        font-size: 4.5vw
+        font-size: 4vw
     }
 
     .footer-socials img {
