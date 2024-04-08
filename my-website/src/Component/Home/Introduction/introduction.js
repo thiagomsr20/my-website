@@ -1,17 +1,15 @@
 import './introduction.css'
-import { useGlobalState } from '../../../GlobalState'; // Importando o hook useGlobalState
+import { useGlobalState } from '../../../GlobalState';
 
 // Imagem de perfil
 import fotoPerfil from './resource/foto de perfil.png'
 
 const textDarkMode = { color: '#c4c4c4' }, textLightMode = { color: '#1d1d1d' }
-const bgDark = { background: '#191919' }, bgLight = { background: '#fff' }
-
 export default function Introduction() {
-    const { darkMode } = useGlobalState(); // Usando o hook useGlobalState para acessar o valor de darkMode
+    const { darkMode } = useGlobalState(); 
 
     return (
-        <div className='Introduction' style={darkMode ? bgDark : bgLight}>
+        <div className='Introduction'>
             <div className='Introduction-container'>
 
                 <div className='apresentacao'>
@@ -25,10 +23,6 @@ export default function Introduction() {
                 <div className='foto'>
                     <img src={fotoPerfil} alt='foto perfil'></img>
                     <span></span>
-                </div>
-
-                <div className='hireme'>
-
                 </div>
             </div>
         </div>

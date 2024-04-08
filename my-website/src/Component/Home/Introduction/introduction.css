@@ -33,13 +33,27 @@
     position: absolute;
     background: linear-gradient(#ffa024, #ac6100);
     z-index: -5;
+    animation: CircleExpand 1s ease-in-out;
+}
+
+
+@keyframes CircleExpand {
+    0% {
+        height: 200px;
+        width: 400px;
+    }
+
+    100% {
+        height: 450px;
+        width: 900px;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .foto span {
         height: calc(20vw * 2.5);
         width: calc(40vw * 2.5);
-    } 
+    }
 }
 
 .Introduction-container img {
@@ -60,12 +74,13 @@
 
 @keyframes fadeUp {
     0% {
-      transform: translateY(100%);
+        transform: translateY(100%);
     }
+
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  }
+}
 
 .apresentacao {
     z-index: -5;
@@ -77,14 +92,8 @@
     top: 7rem;
 }
 
-/* @media screen and (max-width: 700px) {
-    .apresentacao {
-        bottom: 700px
-    }
-} */
-
 .apresentacao span {
-    color: #ffa024
+    color: #ffa024;
 }
 
 /* Responsividade no texto do footer e nas imagens do footer */

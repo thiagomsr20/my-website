@@ -8,14 +8,14 @@ import Header from './Component/Header/header'
 import Footer from './Component/Footer/footer'
 
 // Paginas variaveis
-import Introdution from './Component/Home/Introduction/introduction'
+import Home from './Component/Home/Home'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <GlobalStateProvider>
       <Header />
-      <Introdution />
+      <Home />
       <Footer />
     </GlobalStateProvider>
   </React.StrictMode>
