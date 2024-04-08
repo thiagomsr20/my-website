@@ -1,8 +1,8 @@
 import './skills.css'
-import { useGlobalState } from '../../../GlobalState';
+// import { useGlobalState } from '../../../GlobalState';
 
 export default function Skills(){
-    const { darkMode } = useGlobalState(); 
+    // const { darkMode } = useGlobalState(); 
 
     return (
         <div className='skills'>
