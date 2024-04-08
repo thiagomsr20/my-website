@@ -26,24 +26,24 @@
 }
 
 .project-cards {
-    width: min(100%, 1500px);;
+    width: min(100%, 1500px);
     margin: 0 0 4rem 0;
-    padding: 20px 0 20px 0;
+    padding: 10px 0 20px 0;
 
     display: flex;
     overflow-x: auto;
+    justify-content: center;
+    gap: 20px;
 }
 
-@media screen and (max-width: 2000px) {
-    .project-cards {
-        
-    }
+@media screen and (max-width: 1000px) {
+
 }
 
 .project-card {
-    min-width: 30rem;
+    width: 30rem;
+    min-width: 25rem;
     height: 30rem;
-    margin: 0 40px 0 0;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgb(90, 90, 90);
 
