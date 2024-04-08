@@ -28,7 +28,7 @@
 .project-cards {
     width: min(100%, 1500px);;
     margin: 0 0 4rem 0;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 0 20px 0;
 
     display: flex;
     overflow-x: auto;
