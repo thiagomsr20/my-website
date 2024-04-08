@@ -49,10 +49,24 @@
     }
 }
 
+@keyframes CircleExpandReduced {
+    0% {
+        height: 100px;
+        width: 200px;
+    }
+
+    100% {
+        height: calc(20vw * 2.5);
+        width: calc(40vw * 2.5);
+    }
+}
+
 @media screen and (max-width: 800px) {
     .foto span {
         height: calc(20vw * 2.5);
         width: calc(40vw * 2.5);
+        max-width: 100%;
+        animation: CircleExpandReduced 1s ease-in-out;
     }
 }
 
