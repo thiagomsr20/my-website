@@ -26,7 +26,7 @@
 }
 
 .project-cards {
-    max-width: 1500px;
+    width: min(100%, 1500px);;
     margin: 0 0 4rem 0;
     padding: 20px 10px 20px 10px;
 
