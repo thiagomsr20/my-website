@@ -39,31 +39,22 @@
 
 @media screen and (max-width: 1500px) {
     .project-cards {
+        justify-content: space-evenly;
         width: 100%;
     }
 }
 
-@media screen and (max-width: 900px) {
-    .project-cards {
-        padding: 0 0 0 0;
-    }
-    .project-card {
-        width: 75%;
-        height: 60vw;
-    }
-}
-
 @media screen and (min-width: 900px) {
-    .project-card {
-        min-width: 30rem;
-        height: 30rem;
+    .project-cards {
+        width: min(95%, 1500px);
+        justify-content: space-evenly;
     }
 }
 
 .project-card {
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: 0 5px 10px #5a5a5a;
-
+    z-index: 5;
     background-color: rgb(255, 255, 255);
 
     display: flex;
@@ -71,8 +62,21 @@
     justify-content: center;
 }
 
+.project-card {
+    min-width: 23rem;
+    max-width: 23rem;
+    height: 23rem;
+    transition: 0.7s;
+}
+
 .project-card img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+}
+
+.project-card:hover {
+    transform: translateY(-12px);
+    background-color: #e8e8e8;
+    transition: 0.3s;
 }

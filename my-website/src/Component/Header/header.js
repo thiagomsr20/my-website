@@ -7,21 +7,6 @@ function Header() {
 
     const { darkMode } = useGlobalState(); // Usando o hook useGlobalState para acessar o valor de darkMode
 
-    const [isScrolled, changeClassName] = useState(false);
-    const changeHeader = () => {
-        if (window.scrollY > 0) {
-            // Provávelmente com a inserção de novos campos esse valor vai ter que ser aumentado
-            if(window.scrollY >= 1300){
-                changeClassName(false)
-            }else{
-                changeClassName(true)
-            }
-        }else {
-            changeClassName(false)
-        }
-    }
-    window.addEventListener("scroll", changeHeader)
-
     function menuShow() {
         let menuMobile = document.querySelector('.mobile-menu');
         if (menuMobile.classList.contains('open')) {
@@ -32,7 +17,7 @@ function Header() {
     }
 
     return (
-        <div className={isScrolled ? 'header-scrolled' : 'header'}>
+        <div className={'header'}>
 
             <div className='header-container'>
 
