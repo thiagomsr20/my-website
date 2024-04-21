@@ -1,23 +1,23 @@
 [
-    {
-        "id": 1,
-        "img" : "https://media.istockphoto.com/id/1465648860/vector/note-paper-with-push-pin-sheet-sticky-note-or-notebook-page-with-text-coming-soon-vector.jpg?b=1&s=612x612&w=0&k=20&c=AAXd6kjPROK9HzBpYarmNJJn83hJMV1IQcCEApthI70=",
-        "title": "Coming soon",
-        "desc" : "Coming soon",
-        "url": ""
-    },
-    {
-        "id": 2,
-        "img" : "https://media.istockphoto.com/id/1465648860/vector/note-paper-with-push-pin-sheet-sticky-note-or-notebook-page-with-text-coming-soon-vector.jpg?b=1&s=612x612&w=0&k=20&c=AAXd6kjPROK9HzBpYarmNJJn83hJMV1IQcCEApthI70=",
-        "title": "Coming soon",
-        "desc" : "Coming soon",
-        "url": ""
-    },
-    {
-        "id": 3,
-        "img" : "https://media.istockphoto.com/id/1465648860/vector/note-paper-with-push-pin-sheet-sticky-note-or-notebook-page-with-text-coming-soon-vector.jpg?b=1&s=612x612&w=0&k=20&c=AAXd6kjPROK9HzBpYarmNJJn83hJMV1IQcCEApthI70=",
-        "title": "Coming soon",
-        "desc" : "Coming soon",
-        "url": ""
-    }
+	{
+		"id": 1,
+		"img": "https://media.istockphoto.com/id/1398619494/fr/photo/réveil-et-bientôt-écrit-boîte-à-lumière-blanche-assise-sur-fond-bleu.jpg?s=612x612&w=0&k=20&c=wUAUEtaSR3qcHw0PIECaQtR_jPEHBBDu-1rqs34X0hE=",
+		"title": "Coming soon",
+		"desc": "Coming soon",
+		"url": "https://www.linkedin.com/in/thiago-maciel-soares-738913235/"
+	},
+	{
+		"id": 2,
+		"img": "https://media.istockphoto.com/id/1398619494/fr/photo/réveil-et-bientôt-écrit-boîte-à-lumière-blanche-assise-sur-fond-bleu.jpg?s=612x612&w=0&k=20&c=wUAUEtaSR3qcHw0PIECaQtR_jPEHBBDu-1rqs34X0hE=",
+		"title": "Coming soon",
+		"desc": "Coming soon",
+		"url": "https://www.linkedin.com/in/thiago-maciel-soares-738913235/"
+	},
+	{
+		"id": 3,
+		"img": "https://media.istockphoto.com/id/1398619494/fr/photo/réveil-et-bientôt-écrit-boîte-à-lumière-blanche-assise-sur-fond-bleu.jpg?s=612x612&w=0&k=20&c=wUAUEtaSR3qcHw0PIECaQtR_jPEHBBDu-1rqs34X0hE=",
+		"title": "Coming soon",
+		"desc": "Coming soon",
+		"url": "https://www.linkedin.com/in/thiago-maciel-soares-738913235/"
+	}
 ]

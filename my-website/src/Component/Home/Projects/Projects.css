@@ -50,32 +50,38 @@
         justify-content: space-evenly;
     }
 }
-
 .parent {
     width: 25rem;
     perspective: 1000px;
 }
+@media screen and (max-width: 430px) {
+    .parent {
+        padding: 0 20px 0 20px;
+    }
+}
 
 .card {
     padding-top: 50px;
-    border-radius: 10px;
+    border-radius: 20px;
     transform-style: preserve-3d;
     background-size: 60px 60px;
     background-position: 0 0, 0 0;
-    background-color: rgb(98, 98, 98);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
     width: 100%;
     height: 20rem;
     transition: all 0.5s ease-in-out;
 }
 
 .card:hover {
-    background-position: -100px 100px, -100px 100px;
     transform: rotate3d(0.5, 1, 0, 30deg);
 }
 
 .content-box {
-    background: #ffa024;
-    /* border-radius: 10px 300px 10px 10px; */
+    border-radius: 0 0 0 0;
     transition: all 0.5s ease-in-out;
     padding: 30px 25px 25px 25px;
     transform-style: preserve-3d;
@@ -83,7 +89,7 @@
 
 .content-box .card-title {
     display: inline-block;
-    color: white;
+    color: #000;
     font-size: 25px;
     font-weight: 900;
     transition: all 0.5s ease-in-out;
@@ -98,7 +104,7 @@
     margin-top: 10px;
     font-size: 12px;
     font-weight: 700;
-    color: #f2f2f2;
+    color: #000;
     transition: all 0.5s ease-in-out;
     transform: translate3d(0px, 0px, 30px);
 }
@@ -112,32 +118,42 @@
     margin-top: 1rem;
     display: inline-block;
     font-weight: 900;
-    font-size: 9px;
+    font-size: 12px;
     text-transform: uppercase;
-    color: rgb(7, 185, 255);
+    color: #ffa024;
     border-radius: 5px;
-    background: white;
-    padding: 0.5rem 0.7rem;
+    background: #0084ac;
+    padding: 0.7rem 0.7rem;
     transition: all 0.5s ease-in-out;
     transform: translate3d(0px, 0px, 20px);
+    text-decoration: none;
 }
 
 .content-box .see-more:hover {
     transform: translate3d(0px, 0px, 60px);
 }
 
+.content-box .see-more:active {
+    transform: translate3d(0px, 0px, -10px);
+}
+
 .date-box {
     position: absolute;
     top: 30px;
     right: 30px;
-    height: 60px;
+    height: 55px;
     width: 60px;
-    background: white;
-    border: 1px solid rgb(7, 185, 255);
+    background: #fff;
+    border: 2px solid #0084ac;
     border-radius: 10px;
     padding: 10px;
-    transform: translate3d(0px, 0px, 80px);
+    transform: translate3d(0px, 0px, 85px);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .date-box span {
@@ -146,7 +162,7 @@
 }
 
 .date-box .month {
-    color: rgb(4, 193, 250);
+    color: #0084ac;
     font-size: 9px;
     font-weight: 700;
 }
@@ -154,5 +170,5 @@
 .date-box .date {
     font-size: 20px;
     font-weight: 900;
-    color: rgb(4, 193, 250);
+    color: rgb(0, 132, 172);
 }
