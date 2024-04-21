@@ -11,7 +11,7 @@ export default function Projects() {
 
     return (
         <div className='project' style={darkMode ? bgDark : bgLight}>
-            <h1 style={darkMode ? textDarkMode : textLightMode}>My personal<span>:projects:</span></h1>
+            <h1 style={darkMode ? textDarkMode : textLightMode}>My personal <span>projects</span></h1>
             <div className='project-cards'>
                 {projectData.map((project) => (
                     <div class="parent">

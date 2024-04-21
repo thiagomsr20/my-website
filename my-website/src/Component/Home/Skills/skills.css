@@ -1,4 +1,14 @@
 .skills {
-    width: 100%;
-    height: 20rem;
+    width: min(95%, 1450px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 0 10px 0;
+
+    justify-content: space-between;
+}
+
+.skills i {
+    font-size: 50px;
 }
