@@ -79,6 +79,10 @@ function Header() {
                 </div>
             </div>
 
+            <div className='construction-in-progress-message'>
+                <p>Website under construction <i class="fa-solid fa-gear"></i></p>
+            </div>
+
         </div>
     );
 }

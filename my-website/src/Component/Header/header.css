@@ -1,7 +1,23 @@
+.construction-in-progress-message {
+    background-color: red;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.construction-in-progress-message p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .header {
     transition: 40ms;
     z-index: 10;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
